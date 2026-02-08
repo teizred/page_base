@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- Déclare le type de document comme HTML5 -->
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <!-- On lie notre feuille de style CSS pour le design -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER: L'en-tête de la page -->
+    <header>
+            <h1>Mes Skills</h1>
+    </header>
+
+    <!-- MAIN: Le contenu principal -->
+    <main>
+        <!-- Section pour les compétences FRONTEND -->
+        <section id="container1">
+            <div>
+                <!-- Titre de la section qui, grâce au JavaScript, peut cacher/montrer la liste -->
+                <h2 class="title">Compétences Frontend</h2>
+            </div>
+            <!-- Liste <ul> vide : elle sera remplie automatiquement par le JavaScript -->
+            <ul  id="container1-2">
+            </ul>
+        </section>
+
+        <!-- Section pour les compétences BACKEND -->
+        <section id="container2">
+            <div>
+                <h2 class="title">Compétences Backend</h2>
+            </div>
+            <!-- Liste <ul> vide également, remplie par le JavaScript -->
+            <ul id="container2-2">
+            </ul>
+        </section>
+    </main>
+
+    <!-- FOOTER: Le pied de page -->
+    <footer id="footer">
+            <div id="textfooter1">
+            <p>Projet réalisé par Teizred | 2026</p>
+        </div>
+        <hr>
+        <div id="textfooter2">
+            <p>Contact : teizred@gmail.com</p>
+            <p>Téléphone : 06 06 06 06 06</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPT: On lie notre fichier JavaScript à la fin du body pour qu'il s'exécute après le chargement du HTML -->
+    <script src="script.js"></script>
+</body>
+</html>

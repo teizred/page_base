@@ -1,0 +1,149 @@
+/* RESET CSS: On enlève les marges par défaut pour avoir le contrôle */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY: La structure principale de la page */
+body {
+    font-family: Arial, sans-serif;
+    display: flex; /* Utilisation de Flexbox pour coller le footer en bas */
+    flex-direction: column;
+    min-height: 100vh; /* Prend au moins toute la hauteur de l'écran */
+}
+
+/* HEADER: Style de l'en-tête */
+header {
+    background-color: #F5FBE6;
+    color: #000;
+    padding: 1rem;
+}
+
+/* MAIN: Le contenu prend tout l'espace disponible */
+main {
+    flex: 1;
+}
+
+/* TITRES */
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* CONTAINER 1 (Frontend): Style spécifique */
+#container1 {
+    background-color: #215E61;
+    padding: 4rem;
+    margin: 2rem;
+    border-radius: 20px;
+    border: 3px solid #000;
+}
+
+.title {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+/* CONTAINER 2 (Backend): Style spécifique */
+#container2 {
+    background-color: #233D4D;
+    padding: 4rem;
+    margin: 2rem;
+    border-radius: 20px;
+    border: 3px solid #000;
+}
+
+#container1-2, #container2-2 {
+    color: #fff;
+    text-align: center;
+}
+
+#container2 h3 {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#container2 p {
+    color: #fff;
+    text-align: center;
+}
+
+/* COMPÉTENCES (SKILLS) */
+.skill {
+    text-align: center;
+    font-size: 1rem;
+    margin: 1rem;
+    color: #fff;
+    list-style-type: none; /* Enlève les puces de la liste */
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    transition: all 0.2s ease; /* Animation fluide */
+}
+
+
+/* FOOTER */
+#footer {
+    background-color: #FE7F2D;
+    padding: 4rem;
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+}
+
+#textfooter1 {
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#textfooter2 {
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+hr {
+    border: 1px solid #fff;
+    margin: 2rem;
+}
+
+
+/* RESPONSIVE: Adaptation pour les écrans < 768px (Tablettes/Mobiles) */
+@media (max-width: 768px) {
+    #container1, #container2 {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+
+    #footer {
+        padding: 2rem;
+    }
+}
+
+/* BARRE DE PROGRESSION (<progress>) */
+progress {
+    width: 100px;
+    height: 15px;
+    border-radius: 5px;
+    overflow: hidden;
+    appearance: none; /* Reset du style navigateur */
+    -webkit-appearance: none;
+    border: none; /* Remove default border */
+    background-color: #4CAF50;
+}
+
+
+progress::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 5px;
+}
+
